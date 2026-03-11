@@ -8,21 +8,15 @@ A lightweight, full-stack HRMS application for managing employee records and tra
 
 ## ✨ Features
 
-### Employee Management
-- Add new employees with ID, name, email, and department
-- View complete employee directory with search and department filters
-- Delete employees (with cascade deletion of attendance records)
-
-### Attendance Tracking
-- Mark daily attendance (Present/Absent) for employees
-- Filter records by date and employee
 - View present/absent summary counts
 - Duplicate attendance handling (updates existing record)
 
-### Bonus Features
-- **Dashboard** with summary stats (total employees, present/absent today, department count)
-- **Filter attendance by date**
-- **Present/Absent count per view**
+### ✨ Bonus & Enhancements
+- **User Authentication**: Secure Login/Sign Up system with JWT & HttpOnly cookies (Exceeds requirements)
+- **Dashboard**: Real-time summary stats (total employees, present/absent today, departments)
+- **Responsive Design**: Polished mobile-first UI with sticky header and hamburger menu
+- **Advanced Filtering**: Search and filter by department, date, or employee ID
+- **Developer Indicators**: Hidden Next.js dev indicators for a premium production feel
 
 ### UI/UX
 - Professional, production-ready design with clean corporate theme
@@ -175,12 +169,12 @@ HumanResourceManagemntSystem/
 | Service | Platform |
 |---------|----------|
 | Frontend | Vercel |
-| Backend | Render |
+| Backend | **Railway** |
 | Database | MongoDB Atlas |
 
 ### Live URLs
-- **Frontend**: _[To be updated after deployment]_
-- **Backend API**: _[To be updated after deployment]_
+- **Frontend**: [https://hrms-lite-frontend-1e795cifa-a2v20s-projects.vercel.app](https://hrms-lite-frontend-1e795cifa-a2v20s-projects.vercel.app)
+- **Backend API**: [https://hrms-lite-backend-production-0159.up.railway.app](https://hrms-lite-backend-production-0159.up.railway.app)
 
 ---
 
