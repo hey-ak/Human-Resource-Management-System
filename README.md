@@ -174,7 +174,6 @@ HumanResourceManagemntSystem/
 
 ### Live URLs
 - **Frontend**: [https://hrms-lite-frontend-blush.vercel.app/](https://hrms-lite-frontend-blush.vercel.app/)
-- **Backend API**: [https://hrms-lite-backend-production-0159.up.railway.app](https://hrms-lite-backend-production-0159.up.railway.app)
 
 ---
 
