@@ -5,6 +5,8 @@ const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
 const employeeRoutes = require('./routes/employeeRoutes');
 const attendanceRoutes = require('./routes/attendanceRoutes');
+const authRoutes = require('./routes/authRoutes');
+const { protect } = require('./middleware/authMiddleware');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -18,8 +20,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // API Routes
-app.use('/api/employees', employeeRoutes);
-app.use('/api/attendance', attendanceRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/employees', protect, employeeRoutes);
+app.use('/api/attendance', protect, attendanceRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

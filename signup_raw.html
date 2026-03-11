@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HRMS Lite Sign Up</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d968b",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102220",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col items-center">
+<div class="relative flex h-full min-h-screen w-full max-w-[430px] flex-col bg-background-light dark:bg-background-dark overflow-x-hidden shadow-2xl">
+<div class="flex items-center bg-transparent p-4 pb-2 justify-between">
+<div class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<div class="flex items-center gap-2 pr-12">
+<div class="bg-primary size-8 rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">group</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">HRMS Lite</h2>
+</div>
+</div>
+<div class="px-6 pt-10 pb-6">
+<h1 class="text-slate-900 dark:text-slate-100 text-3xl font-bold leading-tight tracking-tight">Create an account</h1>
+<p class="text-slate-500 dark:text-slate-400 mt-2 text-base">Join your team today and start managing your workspace efficiently.</p>
+</div>
+<div class="px-6 py-4">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 p-6 space-y-5">
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">person</span>
+<input class="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-slate-400" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">mail</span>
+<input class="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-slate-400" placeholder="name@company.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">lock</span>
+<input class="w-full pl-11 pr-12 py-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-slate-400" placeholder="Min. 8 characters" type="password"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl cursor-pointer">visibility</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold">Confirm Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">lock_reset</span>
+<input class="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-slate-400" placeholder="Repeat password" type="password"/>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2">
+                        Sign Up
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-auto pb-10 px-6">
+<div class="flex items-center justify-center gap-2 text-sm">
+<p class="text-slate-500 dark:text-slate-400">Already have an account?</p>
+<a class="text-primary font-bold hover:underline" href="#">Sign in</a>
+</div>
+<div class="mt-8 flex flex-col items-center gap-4">
+<div class="flex items-center w-full gap-4">
+<div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
+<span class="text-xs text-slate-400 uppercase tracking-widest font-semibold">or sign up with</span>
+<div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
+</div>
+<div class="flex gap-4 w-full">
+<button class="flex-1 flex items-center justify-center py-3 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+<img alt="Google Logo" class="w-5 h-5" data-alt="Google logo icon for social login" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEgqIVwnBPeObZcPUqLJ9C1XpqQmqJytIkyepwMftkjZXNZ9KRQDemDojX5KRflVCoyMNyFX8k99qaTW8UAGE9-tCjpcK-7QQvshuVabvJR3CMM_H8OKq4LSw-J_L-dj5qwgfXmUP2lxIEh7R1-HRu0JN0O1dr-3e1bw_G3T5zMUY4nGvJC1UMH1Tfq9IVj3aPUZwMmgbsjgjS_DbMsdrJw9YhxKPMADc7XXDiNHdGb4oPv_0HiNNIeey8QQK0_x_rcKha8bWyj0A"/>
+</button>
+<button class="flex-1 flex items-center justify-center py-3 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">ios</span>
+</button>
+</div>
+</div>
+<p class="mt-8 text-center text-xs text-slate-400 dark:text-slate-500 px-4">
+                By clicking "Sign Up" you agree to HRMS Lite's 
+                <a class="text-primary underline" href="#">Terms of Service</a> and 
+                <a class="text-primary underline" href="#">Privacy Policy</a>.
+            </p>
+</div>
+</div>
+</body></html>

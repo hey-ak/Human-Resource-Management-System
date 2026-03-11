@@ -17,6 +17,48 @@ const handleValidation = (req, res, next) => {
 };
 
 /**
+ * Validation rules for user registration.
+ */
+const validateRegister = [
+    body('name')
+        .trim()
+        .notEmpty()
+        .withMessage('Name is required')
+        .isLength({ max: 50 })
+        .withMessage('Name cannot exceed 50 characters'),
+    body('email')
+        .trim()
+        .notEmpty()
+        .withMessage('Email is required')
+        .isEmail()
+        .withMessage('Please provide a valid email')
+        .normalizeEmail(),
+    body('password')
+        .notEmpty()
+        .withMessage('Password is required')
+        .isLength({ min: 6 })
+        .withMessage('Password must be at least 6 characters long'),
+    handleValidation,
+];
+
+/**
+ * Validation rules for user login.
+ */
+const validateLogin = [
+    body('email')
+        .trim()
+        .notEmpty()
+        .withMessage('Email is required')
+        .isEmail()
+        .withMessage('Please provide a valid email')
+        .normalizeEmail(),
+    body('password')
+        .notEmpty()
+        .withMessage('Password is required'),
+    handleValidation,
+];
+
+/**
  * Validation rules for creating an employee.
  */
 const validateEmployee = [
@@ -69,4 +111,4 @@ const validateAttendance = [
     handleValidation,
 ];
 
-module.exports = { validateEmployee, validateAttendance };
+module.exports = { validateRegister, validateLogin, validateEmployee, validateAttendance };
