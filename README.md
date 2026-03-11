@@ -173,8 +173,7 @@ HumanResourceManagemntSystem/
 | Database | MongoDB Atlas |
 
 ### Live URLs
-- **Frontend (Production)**: [https://hrms-lite-frontend-blush.vercel.app/](https://hrms-lite-frontend-blush.vercel.app/)
-- **Frontend (Preview)**: [https://hrms-lite-frontend-1e795cifa-a2v20s-projects.vercel.app](https://hrms-lite-frontend-1e795cifa-a2v20s-projects.vercel.app)
+- **Frontend**: [https://hrms-lite-frontend-blush.vercel.app/](https://hrms-lite-frontend-blush.vercel.app/)
 - **Backend API**: [https://hrms-lite-backend-production-0159.up.railway.app](https://hrms-lite-backend-production-0159.up.railway.app)
 
 ---
